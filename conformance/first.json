@@ -1,0 +1,323 @@
+{
+  "domain": "all edge partitions of six specified connected graphs",
+  "cases": [
+    {
+      "case": "K2",
+      "n": 2,
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "partitions_tested": 1,
+      "valid_partitions": 1,
+      "best": {
+        "support": 1,
+        "colors": [
+          0
+        ],
+        "vertices": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "case": "P3",
+      "n": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "partitions_tested": 2,
+      "valid_partitions": 2,
+      "best": {
+        "support": 2,
+        "colors": [
+          0,
+          1
+        ],
+        "vertices": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "case": "K3",
+      "n": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "partitions_tested": 5,
+      "valid_partitions": 1,
+      "best": {
+        "support": 1,
+        "colors": [
+          0,
+          0,
+          0
+        ],
+        "vertices": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "case": "K2 square K2",
+      "n": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "partitions_tested": 15,
+      "valid_partitions": 2,
+      "best": {
+        "support": 2,
+        "colors": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "vertices": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "case": "K2 square P3",
+      "n": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "partitions_tested": 877,
+      "valid_partitions": 5,
+      "best": {
+        "support": 3,
+        "colors": [
+          0,
+          1,
+          2,
+          1,
+          1,
+          0,
+          2
+        ],
+        "vertices": [
+          [
+            3,
+            2,
+            4
+          ],
+          [
+            5,
+            2,
+            4
+          ],
+          [
+            5,
+            2,
+            5
+          ],
+          [
+            3,
+            5,
+            4
+          ],
+          [
+            5,
+            5,
+            4
+          ],
+          [
+            5,
+            5,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "case": "K2 square K3",
+      "n": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "partitions_tested": 21147,
+      "valid_partitions": 2,
+      "best": {
+        "support": 2,
+        "colors": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "vertices": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ]
+      }
+    }
+  ],
+  "status": "valid lower-bound certificates; completeness proof and general additivity remain open"
+}
